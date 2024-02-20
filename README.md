@@ -1,12 +1,12 @@
-    private String code;
-    private String myName;
+private String code;
+private String myName;
 
-    public SmartPhone(String code, String myName) {
+public SmartPhone(String code, String myName) {
         this.code = code;
         this.myName = myName;
     }
 
-    @Override
+@Override
     public boolean equals(Object obj) {
         if(obj == null) return  false;
         if(this == obj) return true;
@@ -21,7 +21,7 @@
     //Consistente: x.equals(x) sempre retorna true se x for != null
     // ( Vereficar se o objeto é null, casjo seja vai retornar falso )
 
-    public int hashCode() {
+public int hashCode() {
         return code == null ? 0 : this.code.hashCode();
     }
 
